@@ -1,0 +1,95 @@
+/* COMMON STYLES */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #383838;
+    position: relative;
+    /* margin: 0;
+    padding: 0; */
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'lato', sans-serif;
+    color: white;
+}
+
+/* Footer Elements */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+}
+.footerwrapper > .codepenforwrapper {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+.footerwrapper > .codepenforwrapper > .cpteams {
+    height: 48px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+.footerwrapper > .codepenforwrapper > .cpeducation {
+    height: 48px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+.footerwrapper > .codepenforwrapper > .cpprivacy {
+    height: 48px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+.footerwrapper > .codepenforwrapper > .cpwriting {
+    height: 48px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+.footerwapper > .codepenforwrapper >.cpteams h9, h9 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+}
+.footerwapper > .codepenforwrapper >.cpteams h10, h10 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    margin-left: 4px;
+}
+.solidfooter {
+    display: flex;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: #383838;
+}
+.solidfooter h11 {
+    height: 10%;
+    min-height: 50px;
+    width: 100%;
+}

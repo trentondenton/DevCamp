@@ -1,0 +1,68 @@
+/* NAVIGATION BUTTONS */
+.sparkmenu button {
+    font-family: 'Lato', sans-serif;
+    color: grey;
+    font-size: 1em;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border: none;
+    font-weight: 600;
+}
+.sparkmenu i {
+    color: grey;
+    margin-left: 12px;
+}
+.createbutton button , .loginbutton button , .signupbutton button {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #404041bd;
+    border: 5px;
+    border-color: #404041bd;
+    border-radius: 4px;
+}
+.createbutton i {
+    color: lightgreen;
+    margin-left: 5px;
+}
+.magnifyingglass button{
+    display: block;
+    color: grey;
+    background-color: black;
+    border: none;
+}
+
+/* INDEX BUTTONS */
+
+.infobuttonwrapper > .signupff button {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgreen;
+    border: 8px;
+    border-style: solid;
+    border-color: lightgreen;
+    border-radius: 4px;
+}
+
+.infobuttonwrapper > .learnmore button {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border: 8px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 4px;
+    margin-left: 12px;
+}

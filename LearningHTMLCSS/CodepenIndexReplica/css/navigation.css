@@ -1,0 +1,55 @@
+/* NAVIGATION STYLES */
+.navigationwrapper {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+
+.navigationwrapper > .logo {
+    margin-left: 10px;
+}
+
+.explorationwrapper {
+    color: #cecd77;
+    align-items: left;
+    justify-content: space-around;
+    text-decoration: bold;
+    max-width: 25%;
+}
+
+.explorationwrapper > a{
+    text-decoration: none;
+    color: White;
+    margin-right: 8px;
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+.logandsignwrapper {
+    width: 16%;
+    display: flex;
+    align-items: right;
+    justify-content: space-evenly;
+}
+
+.sparkmenu {
+    width: 16%;
+    height: inherit;
+    font-size: 1em;
+    font-weight: 800;
+}
+.magnifyingglass{
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    width: 7%;
+    max-width: 7%;
+}
+.magnifyingglass i{
+    font-size: 2em;
+    color: grey;
+}

@@ -1,0 +1,92 @@
+/* INDEX STYLES */
+.bodycontentwrapper {
+    display: flex;
+    position: relative;
+    background-color: grey;
+    align-items: space-between;
+    box-shadow: inset -26px 0px 50px 32px #383838;
+    height: 100%;
+    width: 100%;
+}
+.leftcontentwrapper {
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin-left: 32px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.leftcontentwrapper > .spacer32 {
+    height: 32px;
+}
+.lefttextwrapper {
+    width: auto;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 1.8em;
+    margin-left: 20px;
+    font-weight: -100;
+}
+.lefttextwrapper p2, p2 {
+    font-size: 1em;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+}
+.lefttextwrapper p3, p3 {
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+}
+.lefttextwrapper > .spacer20 {
+    height: 20px;
+}
+.lefttextwrapper p4, p4 {
+    font-size: 1.6rem;
+}
+
+/* Right Content Wrapper */
+.rightcontentwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    position: relative;
+    padding: 0px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    max-height: 75%;
+    max-width: 100%;
+    height: 75%;
+    width: 75%;
+}
+.rightcontentwrapper > .examplesitewrapper i{
+    height: auto;
+    width: 100%;
+}
+.rightcontentwrapper > .righttextwrapper p5, p5{
+    margin-left: 10px;
+}
+.rightcontentwrapper > .righttextwrapper p5, p5, p7{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+.rightcontentwrapper > .spacer10 {
+    margin-bottom: 10px;
+}
+.rightcontentwrapper > .righttextwrapper p6, p6 {
+    color: skyblue;
+    font-weight: 800;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    width: 50%;
+}
+.spacer32 {
+    height: 32px;
+}
+.infobuttonwrapper {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 32px;
+    align-items: space-between;
+}

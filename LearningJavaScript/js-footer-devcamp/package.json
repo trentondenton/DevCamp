@@ -1,0 +1,25 @@
+{
+  "name": "js-footer-devcamp",
+  "version": "0.1.0",
+  "description": "This module allows for a dynamic footer to be generated for JS applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syncarpium/js-footer-devcamp.git"
+  },
+  "keywords": [
+    "footer"
+  ],
+  "author": "Trenton Denton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Syncarpium/js-footer-devcamp/issues"
+  },
+  "homepage": "https://github.com/Syncarpium/js-footer-devcamp#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

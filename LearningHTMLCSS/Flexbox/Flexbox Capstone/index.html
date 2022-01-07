@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/33bbae6278.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+<style>
+    html {
+        font-family: 'Poppins', sans-serif;
+    }
+    body {
+        margin: 0px;
+        font-size: 16px;
+    }
+    
+    .navbar {
+        background: grey;
+    }
+
+    .navbar div {
+        display: none;
+    }
+
+    .navbar .toggle, .navbar .logo {
+        display: inline-block;
+    }
+
+    .navbar .link {
+        display: block;
+        text-align: center;
+        padding: 1em;
+        text-decoration: none;
+        background: darkgrey;
+        color: white;
+    }
+
+    .navbar .link:hover, .navbar .link:active {
+        color: darkgrey;
+        background: white;
+    }
+    
+    .navbar > .logo {
+        width: 10em;
+        text-align: center;
+        padding: 1em;
+        color: white;
+    }
+
+    .navbar a {
+        text-decoration: none;
+    }
+
+    .navbar .toggle {
+        padding: 1em;
+        color: black;
+    }
+
+    @media (min-width: 48em) {
+        .navbar {
+            display: flex;
+        }
+
+        .navbar div {
+            display: flex;
+        }
+        .navbar > .left, .navbar > .right {
+            display: flex;
+            flex: 1;
+        }
+
+        .navbar > .link {
+            width: auto;
+        }
+
+        .navbar > .right {
+            justify-content: flex-end;
+        }
+
+        .navbar > .toggle {
+            display: none;
+        }
+    }
+
+    @media (max-width: 48em) {
+        .navbar.active .toggle {
+            background: lightgrey;
+            color: white;
+        }
+
+        .navbar .logo {
+            text-align: left;
+        }
+
+        .navbar.active div {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="#" class="toggle" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a href="#" class="logo">Trenton Denton</a>
+    
+            <div class="left">
+                <a href="#" class="link">Link1</a>
+                <a href="#" class="link">Link2</a>
+            </div>
+            
+            <div class="right">
+                <a href="#" class="link">Link3</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    const hamburger = document.querySelector ('#hamburger')
+
+    hamburger .addEventListener('click', (e) => {
+        hamburger.parentElement.classList.toggle('active');
+    })
+</script>
+</html>

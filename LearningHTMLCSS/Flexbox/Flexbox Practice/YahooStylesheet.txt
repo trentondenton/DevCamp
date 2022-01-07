@@ -1,0 +1,34 @@
+STYLESHEET FOR YAHOO
+
+$font: Helvetica Neue",Helvetica,Arial,sans-serif;
+$heading: font-size: 12px;
+          font-weight: 700;
+
+$heading-lifestyle:
+              color: magenta;
+$heading-news:
+              color: ceruleanblue;
+
+$heading-celebrity:
+              color: pink;
+$heading-sports:
+              color: darkorange;
+$heading-tech:
+              color: orange;
+$heading-health:
+              color: teal;
+$article-heading:
+              color: black;
+              font-size: 18px;
+              font-weight: 700;
+$article-heading-hover:
+              color: #6001d2;
+
+$article-sub-heading:
+              color: #232a31;
+              font-size: 16px;
+              font-weight: 700;
+
+$paragraph:
+            color: fujiigrey;
+            font-size: 12px;
