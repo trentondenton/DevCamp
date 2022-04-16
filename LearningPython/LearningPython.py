@@ -50,7 +50,7 @@
 # print('Exponents')
 # print(11 ** 2)
 
-#USES PEMDAS (Please Excuse My      Dear Aunt Sally)
+# USES PEMDAS (Please Excuse My      Dear Aunt Sally)
 #            (Par()  Exp**  Multi*  Div/ Add+ Sub-)
 # calculation = 8 + 2 * 5 - (9+2) ** 2
 # print(calculation)
@@ -74,9 +74,9 @@
 
 
 # product_cost += (commission_rate * product_cost)
-# print(product_cost * qty) 
-#WITHOUT DECIMAL 42962.4 
-#WITH DECIMAL LIBRARY 42962.40000000000282883716451
+# print(product_cost * qty)
+# WITHOUT DECIMAL 42962.4
+# WITH DECIMAL LIBRARY 42962.40000000000282883716451
 
 # from decimal import Decimal
 
@@ -104,10 +104,10 @@
 # print(5 ** 2)
 
 # manual_exponent(2, 3)
-#>8
+# >8
 
 # manual_exponent(10,2)
-#>100
+# >100
 
 # import math
 # from functools import reduce
@@ -119,10 +119,10 @@
 #     while counter > 0:
 #         total *= num
 #         counter -= 1
-    
+
 #     return total
 
-#ANOTHER WAY TO DO IT USING REDUCE:
+# ANOTHER WAY TO DO IT USING REDUCE:
 # def manual_exponent(num, exp):
 #     computed_list = [num] * exp
 #     return (reduce(lambda total, element: total * element, computed_list))
@@ -373,7 +373,7 @@
 
 # sales = {
 #   'google': 20,
-#   'twitter': 10,  
+#   'twitter': 10,
 #   'facebook': 42,
 #   'offline': 12,
 # }
@@ -393,7 +393,6 @@
 # title, sub_heading, content = post
 
 
-
 # # title = post[0]
 # # sub_heading = post[1]
 # # content = post[2]
@@ -411,7 +410,6 @@
 # title, sub_heading, content, status = post
 
 
-
 # print(title, sub_heading, content, status)
 
 # post = ('Python Basics', 'Intro guide to python', 'Some python content')
@@ -423,12 +421,12 @@
 # print(post[-1][1])
 
 # post = ('Python Basics', 'Intro guide to python', 'Some python content', 'published')
-#Removing Elements from End!
+# Removing Elements from End!
 # post = post[:-1]
-#Removing Elements from Start!
+# Removing Elements from Start!
 # post = post[1:]
-#Removing Specific Element: NOT BEST PRACTICE!
-#Changes Tuple to List. Has to be changed back to Tuple AFTER!
+# Removing Specific Element: NOT BEST PRACTICE!
+# Changes Tuple to List. Has to be changed back to Tuple AFTER!
 # post = list(post)
 # post.remove('published')
 # post = tuple(post)
@@ -474,17 +472,17 @@
 #     'tutorials',
 #     'development'
 # }
-#Merge Tags Removed Duplicates
+# Merge Tags Removed Duplicates
 # merged_tags = tags_one | tags_two
 # print(merged_tags)
 
-#Tags in tags 1 but not in tags 2
+# Tags in tags 1 but not in tags 2
 # exclusive_to_tag_one = tags_one - tags_two
 # exclusive_to_tag_two = tags_two - tags_one
 # print(exclusive_to_tag_one)
 # print(exclusive_to_tag_two)
 
-#Tags in both 1 & 2 tags
+# Tags in both 1 & 2 tags
 # common_tags = tags_one & tags_two
 # print(common_tags)
 
@@ -555,15 +553,11 @@
 # loop_and_break()
 
 
-
-
-
-
-#HERE IS THE COMPLETED BUT SAYS ERROR
+# HERE IS THE COMPLETED BUT SAYS ERROR
 
 
 # def loop_using_while():
-#     dog_house = ['Nova', 'Kai', 'Jude', 'Gus', 'Koda',] 
+#     dog_house = ['Nova', 'Kai', 'Jude', 'Gus', 'Koda',]
 #     counter = 0
 #     while counter <= 4:
 #         counter +=1
@@ -574,14 +568,13 @@
 # loop_using_while()
 
 
-
 # def loop_over_list():
 #     numbers = [1,2,3,4,5,6]
-#     result = []    
+#     result = []
 #     for number in numbers:
 #         result.append(number + 1)
 #         print(result)
-    
+
 #     return result
 # loop_over_list()
 
@@ -618,7 +611,6 @@
 # print(even_numbers)
 
 
-
 # def list_comprehension():
 #     numbers = [1,2,3,4,5,6]
 #     result = [number + 1 for number in numbers]
@@ -637,7 +629,7 @@
 #     dog_house = ['Nova', 'Kai', 'Jude', 'Gus']
 #     counter = 0
 #     while counter != 4:
-#         counter += 1 
+#         counter += 1
 #     for dog in dog_house:
 #         print(dog)
 #     return [dog_house, counter]
@@ -660,7 +652,7 @@
 # def value_in_string():
 #     sentence = 'Python is the best!'
 #     word = 'Python'
-    
+
 #     if word.lower() in sentence.lower():
 #       print('The word is in the sentence')
 #     else:
@@ -684,7 +676,7 @@
 #         print("Failure...")
 # compound_conditional(100)
 
-#FUNCTION(S)
+# FUNCTION(S)
 
 # def sum_two_numbers(num_one, num_two):
 #     num_one = num_one + num_two
@@ -701,14 +693,11 @@
 # greeting('Jordan')
 
 
-
-
 # def counter(initial_count = 0):
 #     initial_count += 1
 #     return initial_count
 # print(counter())
 # counter()
-
 
 
 # def function(first_name, last_name):
@@ -789,11 +778,10 @@
 # lambda_practice('Trenton')
 
 
-
-#FIZZBUZZ TEST
+# FIZZBUZZ TEST
 
 # def fizbuzz(x):
-#     for i in range(1, x+1): 
+#     for i in range(1, x+1):
 #         if i % 3 == 0 and i %5 == 0:
 #             print('FizzBuzz')
 #             continue
@@ -813,25 +801,23 @@
 # def converter(num):
 #     counter = num * 4
 #     num = counter / 4
-#     print(counter) 
+#     print(counter)
 # converter(15)
 
-#CLASSES OVERVIEW
+# CLASSES OVERVIEW
 
 # class Invoice:
 #     def greeting(self):
 #         return 'Hi There'
-    
+
 # inv_one = Invoice()
 # print(inv_one.greeting())
 
 # class Garage:
 #     def open_door(self):
 #         return 'The door opens'
-    
+
 # home = Garage()
-
-
 
 
 # class Invoice:
@@ -855,11 +841,11 @@
 
 #     def open_door(self):
 #         return "The door opens"
-    
+
 # home = Garage(2)
 
 
-#CAN OVERRIDE VALUE WITH SETTER.
+# CAN OVERRIDE VALUE WITH SETTER.
 # class Invoice:
 #     def __init__(self, client, total):
 #         self.client = client
@@ -883,7 +869,7 @@
 
 #   def open_door(self):
 #     return "The door opens"
-    
+
 # home = Garage(2)
 # home.size = 0
 # get_cars = home.cars
@@ -904,11 +890,8 @@
 #     return "The door opens"
 
 
-
-
-
-#DUNDER = DOUBLE UNDERSCORES
-#HAS TO DO WITH PRIVATE/PROTECTED METHODS.
+# DUNDER = DOUBLE UNDERSCORES
+# HAS TO DO WITH PRIVATE/PROTECTED METHODS.
 # class Invoice:
 #   def __str__(self):
 #     return "This is the invoice class!"
@@ -956,19 +939,14 @@
 # print(ws_two.__dict__)
 
 
-
-
-
-
-
 # #POLYMORPHIC FUNCTIONS IN PYTHON. RENDER. HTML.
 # class Html:
 #     def __init__(self, content):
 #         self.content = content
-    
+
 #     def render(self):
 #         raise NotImplementedError('Subclass must implement render method')
-        
+
 # class Heading(Html):
 #     def render(self):
 #         return f'<h1>{self.content}</h1>'
@@ -988,17 +966,16 @@
 # div_two = Div('Another div') #second set
 
 # def html_render(tag_object):
-#     print(tag_object.render()) 
+#     print(tag_object.render())
 # for tag in tags: #first set
-#     print(tag.render()) 
+#     print(tag.render())
 
 # html_render(div_one)
 # html_render(div_two)
 # html_render(heading) #second setup
 
 
-
-#BUILD A FILE WITHIN PYTHON
+# BUILD A FILE WITHIN PYTHON
 # file_builder =open("logger.txt", "w+")
 # file_builder.write("Hey, I'm in a file!")
 # file_builder.close()
@@ -1010,8 +987,7 @@
 # file_builder.close()
 
 
-
-#FN MATCH AND SEARCHING FILES ETC
+# FN MATCH AND SEARCHING FILES ETC
 # import fnmatch
 # from fnmatch import fnmatchcase
 # import os
@@ -1045,7 +1021,7 @@
 # print(second_base_players)
 
 
-#PRETTY PRICE OR TOTAL GENERATOR FOR ECOMMERCE
+# PRETTY PRICE OR TOTAL GENERATOR FOR ECOMMERCE
 # def pretty_price(gross_price, extension):
 #     if isinstance(extension, int):
 #         extension = extension * 0.01
@@ -1055,16 +1031,13 @@
 # print(pretty_price(3.50, 95))
 
 
-
-
-
 # num_list = [1, 2, 3, 4, 5, 6]
 
 # def average(num):
 #     sum_num = 0
 #     for i in num:
 #         sum_num = sum_num + i
-    
+
 #     avg = sum_num / len(num)
 #     return avg
 # print("The average is", average(num_list))
@@ -1077,17 +1050,21 @@
 #     "Nova"
 # }
 
+
 # def loop_over_list():
 #     for name in my_list:
 #         print(name)
-#     return my_list;
+#     return my_list
+
 
 # loop_over_list()
 
 
-# greeting= lambda name: f'{name}'
+# def greeting(name): return f'{name}'
+
 
 # def lambda_practice(name):
 #     return f'Hi, {name}'
+
 
 # print(lambda_practice(greeting('Jordan')))
