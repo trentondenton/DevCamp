@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "files": [
+    "005_typescript_config.ts",
+  ]
+}
