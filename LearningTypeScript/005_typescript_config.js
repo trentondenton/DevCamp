@@ -1,4 +1,3 @@
-"use strict";
 // function hey_there() {
 //   console.log("Hi from typescript")
 // }
@@ -17,6 +16,12 @@
 // var msg: string = "Trenton";
 // console.log("A long message to " + msg + " filled with text");
 // console.log(`A long message to ${msg} filled with text`);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 // // Booleans
 // let paidAccount: Boolean = false;
 // // Numbers
@@ -179,22 +184,87 @@
 // class Invoice { companyProfile: string; constructor(public name: string, public city: string, public state: string) { this.companyProfile = name + ", " + city + ", " + state; } }
 // var testInvoice = new Invoice('company name', 'city', 'State');
 // console.log(testInvoice.name, testInvoice.city, testInvoice.state)
-var Invoice = /** @class */ (function () {
-    function Invoice(total) {
-        this.total = total;
+// class Invoice {
+//   total: number;
+//   constructor(total: number) {
+//     this.total = total;
+//   }
+//   printTotal() {
+//     console.log(this.total);
+//   }
+//   printLater(time: number) {
+//     setTimeout(() => {
+//       console.log(this.total);
+//     }, time)
+//   }
+// }
+// var invoice = new Invoice(400);
+// invoice.printTotal();
+// invoice.printLater(1000);
+// //Higher Order Functions & Callbacks in TypeScript
+// var dbQuery = function (): void {
+//   setTimeout(() => {
+//     console.log('Query Results');
+//   }, 3000);
+// }
+// function loadPage(q: () => void) {
+//   console.log("Header");
+//   q();
+//   console.log("Sidebar");
+//   console.log("Footer");
+// }
+// loadPage(dbQuery);
+// "use strict";
+// let performUpload = function (imgStatus: string): Promise<{ imgStatus: string }> {
+//   return new Promise((resolve) => {
+//     console.log(`Status: ${imgStatus}`);
+//     setTimeout(() => {
+//       resolve({ imgStatus: imgStatus })
+//     }, 1000);
+//   });
+// }
+// var upload;
+// var compress;
+// var transfer;
+// performUpload('upload')
+//   .then((res) => {
+//     upload = res;
+//     return performUpload('compressing');
+//   })
+//   .then((res) => {
+//     compress = res;
+//     return performUpload('transferring');
+//   })
+//   .then((res) => {
+//     transfer = res;
+//     return performUpload('upload completed');
+//   });
+var AccountsPayable = /** @class */ (function () {
+    function AccountsPayable() {
     }
-    Invoice.prototype.printTotal = function () {
-        console.log(this.total);
+    AccountsPayable.prototype.deleteAccount = function () {
+        console.log('Deleting Account');
     };
-    Invoice.prototype.printLater = function (time) {
-        var _this = this;
-        setTimeout(function () {
-            console.log(_this.total);
-        }, time);
-    };
-    return Invoice;
+    __decorate([
+        admin
+    ], AccountsPayable.prototype, "deleteAccount");
+    AccountsPayable = __decorate([
+        detailedLog('billing')
+    ], AccountsPayable);
+    return AccountsPayable;
 }());
-var invoice = new Invoice(400);
-invoice.printTotal();
-invoice.printLater(1000);
-//# sourceMappingURL=005_typescript_config.js.map
+function detailedLog(dashboard) {
+    if (dashboard == 'billing') {
+        console.log('Working with the billing department');
+        return function (tatget) { };
+    }
+    else {
+        return function (target) { };
+    }
+}
+function admin(target, propertyKey, descriptor) {
+    console.log("Doing admin check");
+    return descriptor;
+}
+var post = new AccountsPayable;
+post.deleteAccount();

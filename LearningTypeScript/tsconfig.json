@@ -2,7 +2,9 @@
   "compilerOptions": {
     "sourceMap": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "target": "es6",
+    "experimentalDecorators": true
   },
   "files": [
     "005_typescript_config.ts",

@@ -223,24 +223,97 @@
 
 // console.log(testInvoice.name, testInvoice.city, testInvoice.state)
 
-class Invoice {
-  total: number;
+// class Invoice {
+//   total: number;
 
-  constructor(total: number) {
-    this.total = total;
-  }
+//   constructor(total: number) {
+//     this.total = total;
+//   }
 
-  printTotal() {
-    console.log(this.total);
-  }
+//   printTotal() {
+//     console.log(this.total);
+//   }
 
-  printLater(time: number) {
-    setTimeout(() => {
-      console.log(this.total);
-    }, time)
+//   printLater(time: number) {
+//     setTimeout(() => {
+//       console.log(this.total);
+//     }, time)
+//   }
+// }
+
+// var invoice = new Invoice(400);
+// invoice.printTotal();
+// invoice.printLater(1000);
+
+
+// //Higher Order Functions & Callbacks in TypeScript
+// var dbQuery = function (): void {
+//   setTimeout(() => {
+//     console.log('Query Results');
+//   }, 3000);
+// }
+
+// function loadPage(q: () => void) {
+//   console.log("Header");
+//   q();
+//   console.log("Sidebar");
+//   console.log("Footer");
+// }
+
+// loadPage(dbQuery);
+
+// "use strict";
+
+// let performUpload = function (imgStatus: string): Promise<{ imgStatus: string }> {
+//   return new Promise((resolve) => {
+//     console.log(`Status: ${imgStatus}`);
+//     setTimeout(() => {
+//       resolve({ imgStatus: imgStatus })
+//     }, 1000);
+//   });
+// }
+
+// var upload;
+// var compress;
+// var transfer;
+
+// performUpload('upload')
+//   .then((res) => {
+//     upload = res;
+//     return performUpload('compressing');
+//   })
+//   .then((res) => {
+//     compress = res;
+//     return performUpload('transferring');
+//   })
+//   .then((res) => {
+//     transfer = res;
+//     return performUpload('upload completed');
+//   });
+
+@detailedLog('billing')
+class AccountsPayable {
+  constructor() { }
+
+  @admin
+  deleteAccount() {
+    console.log('Deleting Account');
   }
 }
 
-var invoice = new Invoice(400);
-invoice.printTotal();
-invoice.printLater(1000);
+function detailedLog(dashboard: string) {
+  if (dashboard == 'billing') {
+    console.log('Working with the billing department');
+    return function (target: Object) { };
+  } else {
+    return function (target: Object) { };
+  }
+}
+
+function admin(target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<any>): any {
+  console.log("Doing admin check");
+  return descriptor;
+}
+
+var post = new AccountsPayable;
+post.deleteAccount()
